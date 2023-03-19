@@ -9,6 +9,7 @@ function Navbar() {
         <img src={Logo} alt="logo" />
       </Link>
       <nav>
+        <Link to="/vans">Vans</Link>
         <Link to="/about">About</Link>
       </nav>
     </header>

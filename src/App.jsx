@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import Vans from "./pages/Vans";
+// Import fake API server
+import "../server.js";
 
 function App() {
   return (
