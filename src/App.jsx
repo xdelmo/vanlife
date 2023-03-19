@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Vans from "./pages/Vans";
 // Import fake API server
 import "../server.js";
+import VanDetail from "./pages/VanDetail";
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans />} />
+        {/* Nested routes with route params */}
+        <Route path="/vans/:id" element={<VanDetail />} />
       </Routes>
     </BrowserRouter>
   );

@@ -1,16 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import Logo from "../assets/images/logo.png";
 function Navbar() {
   return (
     <header>
-      <Link className="site-logo" to="/">
+      <NavLink className="site-logo" to="/">
         <img src={Logo} alt="logo" />
-      </Link>
+      </NavLink>
       <nav>
-        <Link to="/vans">Vans</Link>
-        <Link to="/about">About</Link>
+        <NavLink to="/vans">Vans</NavLink>
+        <NavLink to="/about">About</NavLink>
       </nav>
     </header>
   );
