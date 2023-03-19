@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-export default function useGetVanDetail({ params }) {
+export default function useGetVanDetail(id) {
   const [vanDetail, setVanDetail] = useState(null);
 
   useEffect(() => {
-    fetch(`/api/vans/${params.id}`)
+    fetch(`/api/vans/${id}`)
       .then((res) => res.json())
       .then((data) => setVanDetail(data.vans));
-  }, [params.id]);
+  }, [id]);
 
   return vanDetail;
 }

@@ -5,9 +5,9 @@ import useGetVanDetail from "../hooks/useGetVanDetail";
 
 function VanDetail() {
   // Grab params (valors after : in Route Component's path) as an object
-  const params = useParams();
+  const { id } = useParams();
 
-  const van = useGetVanDetail({ params });
+  const van = useGetVanDetail(id);
 
   return (
     <div className="van-detail-container">
